@@ -88,6 +88,19 @@ const NavPortfolio = () => {
                 Projects
               </button>
               </Link>
+          
+            </div>
+            <div
+              // className="relative"
+              // onMouseEnter={() => handleMouseEnter("projects")}
+              // onMouseLeave={handleMouseLeave}
+            >
+              <Link href="/blogs">
+              <button className="text-gray-200 cursor-pointer hover:text-white duration-300">
+                Blogs
+              </button>
+              </Link>
+          
             </div>
 
             <Link
@@ -347,6 +360,13 @@ const NavPortfolio = () => {
             className="text-gray-200 hover:text-white duration-300 py-2"
           >
             About Us
+          </Link>
+          <Link
+            href="/blogs"
+            onClick={toggleSidebar}
+            className="text-gray-200 hover:text-white duration-300 py-2"
+          >
+            Blogs
           </Link>
         </div>
       </div>
