@@ -21,116 +21,116 @@ export default function ProjectsPage() {
 
   // Fake data for projects
   const projectsData = {
- ecommerce: [
-  {
-    title: "SERIN",
-    image: serin,
-    desc: "SERIN is a modern cosmetics e-commerce website where customers can browse beauty products, add items to their cart, and complete purchases through a secure checkout system.",
-    frontend: "Next.js, Tailwind CSS",
-    backend: "Node.js, Express, MongoDB",
-    duration: "1 month",
-    link: "https://www.serinbeautyshop.com",
-  },
-  {
-    title: "BOOK FOREST",
-    image: bookforest,
-    desc: "Jubair Ahmed is an online bookstore that allows users to explore a wide range of books, purchase them easily, and enjoy a smooth browsing and checkout experience.",
-    frontend: "Next.js, Tailwind CSS",
-    backend: "Node.js, Express, MongoDB",
-    duration: "1 month",
-    link: "https://www.bookforest.net",
-  },
-  {
-    title: "MY COLOR EVENT",
-    image: mycolorevent,
-    desc: "MY COLOR EVENT is an event management platform designed to help users plan, organize, and book events seamlessly with a user-friendly interface and efficient backend support.",
-    frontend: "Next.js, Tailwind CSS",
-    backend: "Node.js, Express, MongoDB",
-    duration: "1 month",
-    link: "https://www.mycolorevents.com/",
-  },
-],
+    ecommerce: [
+      {
+        title: "SERIN",
+        image: serin,
+        desc: "SERIN is a modern cosmetics e-commerce website where customers can browse beauty products, add items to their cart, and complete purchases through a secure checkout system.",
+        frontend: "Next.js, Tailwind CSS",
+        backend: "Node.js, Express, MongoDB",
+        duration: "1 month",
+        link: "https://www.serinbeautyshop.com",
+      },
+      {
+        title: "BOOK FOREST",
+        image: bookforest,
+        desc: "Jubair Ahmed is an online bookstore that allows users to explore a wide range of books, purchase them easily, and enjoy a smooth browsing and checkout experience.",
+        frontend: "Next.js, Tailwind CSS",
+        backend: "Node.js, Express, MongoDB",
+        duration: "1 month",
+        link: "https://www.bookforest.net",
+      },
+      {
+        title: "MY COLOR EVENT",
+        image: mycolorevent,
+        desc: "MY COLOR EVENT is an event management platform designed to help users plan, organize, and book events seamlessly with a user-friendly interface and efficient backend support.",
+        frontend: "Next.js, Tailwind CSS",
+        backend: "Node.js, Express, MongoDB",
+        duration: "1 month",
+        link: "https://www.mycolorevents.com/",
+      },
+    ],
 
-web: [
-  {
-    title: "FABRICA",
-    image: fabrica,
-    desc: "We deliver premium aluminum & glass solutions — waterproof, noise-reducing, eco-friendly, and built to last.",
-    frontend: "Nextjs, Tailwind CSS",
-    backend: "Node.js, Express, MongoDB",
-    duration: "2 weeks",
-    link: "https://www.fabrica.com.bd/",
-  },
-  {
-    title: "TEX EDGE AUTOMATION",
-    image: taxage,
-    desc: "Tex Edge Automation delivers advanced sewing automation solutions to empower garment factories to enhance productivity, quality, and efficiency.",
-    frontend: "Nextjs, Tailwind CSS",
-    backend: "Node.js, Express, MongoDB",
-    duration: "2 weeks",
-    link: "https://client-2-iota.vercel.app/",
-  },
-  {
-    title: "XUTECH",
-    image: xutech,
-    desc: "MIRAICBD is a consultancy company website designed as a modern portfolio to showcase services, expertise, and client-focused solutions with a sleek and professional interface.",
-    frontend: "Nextjs, Tailwind CSS",
-    backend: "Node.js, Express, MongoDB",
-    duration: "2 weeks",
-    link: "https://www.xutech.co/",
-  },
-  {
-    title: "JUBAIR AHMED PORTFOLIO",
-    image: jubair,
-    desc: "MIRAICBD is a consultancy company website designed as a modern portfolio to showcase services, expertise, and client-focused solutions with a sleek and professional interface.",
-    frontend: "Nextjs, Tailwind CSS",
-    backend: "Node.js, Express, MongoDB",
-    duration: "2 weeks",
-    link: "https://jubair-ahmed.vercel.app/",
-  },
-  {
-    title: "MIRAICBD",
-    image: miraicbd,
-    desc: "MIRAICBD is a consultancy company website designed as a modern portfolio to showcase services, expertise, and client-focused solutions with a sleek and professional interface.",
-    frontend: "React.js, Firebase, Tailwind CSS",
-    backend: "Node.js, Express, MongoDB",
-    duration: "2 weeks",
-    link: "https://miraicbd.com/",
-  },
-  {
-    title: "NEXTTECHITC",
-    image: nexttech,
-    desc: "NEXTTECH ITC is an IT course-selling platform built with engaging animations and a smooth user experience, providing students with easy access to tech courses and training programs.",
-    frontend: "React, Framer Motion",
-    backend: "Node.js, Express, MongoDB",
-    duration: "1 month",
-    link: "https://www.nexttechitc.com/",
-  },
-],
+    web: [
+      {
+        title: "FABRICA",
+        image: fabrica,
+        desc: "We deliver premium aluminum & glass solutions — waterproof, noise-reducing, eco-friendly, and built to last.",
+        frontend: "Nextjs, Tailwind CSS",
+        backend: "Node.js, Express, MongoDB",
+        duration: "2 weeks",
+        link: "https://www.fabrica.com.bd/",
+      },
+      {
+        title: "TEX EDGE AUTOMATION",
+        image: taxage,
+        desc: "Tex Edge Automation delivers advanced sewing automation solutions to empower garment factories to enhance productivity, quality, and efficiency.",
+        frontend: "Nextjs, Tailwind CSS",
+        backend: "Node.js, Express, MongoDB",
+        duration: "2 weeks",
+        link: "https://client-2-iota.vercel.app/",
+      },
+      {
+        title: "XUTECH",
+        image: xutech,
+        desc: "MIRAICBD is a consultancy company website designed as a modern portfolio to showcase services, expertise, and client-focused solutions with a sleek and professional interface.",
+        frontend: "Nextjs, Tailwind CSS",
+        backend: "Node.js, Express, MongoDB",
+        duration: "2 weeks",
+        link: "https://www.xutech.co/",
+      },
+      {
+        title: "JUBAIR AHMED PORTFOLIO",
+        image: jubair,
+        desc: "MIRAICBD is a consultancy company website designed as a modern portfolio to showcase services, expertise, and client-focused solutions with a sleek and professional interface.",
+        frontend: "Nextjs, Tailwind CSS",
+        backend: "Node.js, Express, MongoDB",
+        duration: "2 weeks",
+        link: "https://jubair-ahmed.vercel.app/",
+      },
+      {
+        title: "MIRAICBD",
+        image: miraicbd,
+        desc: "MIRAICBD is a consultancy company website designed as a modern portfolio to showcase services, expertise, and client-focused solutions with a sleek and professional interface.",
+        frontend: "React.js, Firebase, Tailwind CSS",
+        backend: "Node.js, Express, MongoDB",
+        duration: "2 weeks",
+        link: "https://miraicbd.com/",
+      },
+      {
+        title: "NEXTTECHITC",
+        image: nexttech,
+        desc: "NEXTTECH ITC is an IT course-selling platform built with engaging animations and a smooth user experience, providing students with easy access to tech courses and training programs.",
+        frontend: "React, Framer Motion",
+        backend: "Node.js, Express, MongoDB",
+        duration: "1 month",
+        link: "https://www.nexttechitc.com/",
+      },
+    ],
 
-"job-board": [
-  {
-    title: "Tutor Tree",
-    image: tutortree,
-    desc: "Tutor Tree is an online job portal that connects students with qualified tutors and helps teachers find tutoring opportunities through advanced search and filtering features.",
-    frontend: "React, Framer Motion",
-    backend: "Node.js, Express, MongoDB",
-    duration: "2 months",
-    link: "https://66f2b09a38f9aa0084e219af--magical-souffle-89638e.netlify.app/",
-  },
-],
+    "job-board": [
+      {
+        title: "Tutor Tree",
+        image: tutortree,
+        desc: "Tutor Tree is an online job portal that connects students with qualified tutors and helps teachers find tutoring opportunities through advanced search and filtering features.",
+        frontend: "React, Framer Motion",
+        backend: "Node.js, Express, MongoDB",
+        duration: "2 months",
+        link: "https://66f2b09a38f9aa0084e219af--magical-souffle-89638e.netlify.app/",
+      },
+    ],
 
-gaming: [
-  {
-    title: "UBE HERO",
-    image: ubehero,
-    desc: "UBE HERO is a competitive gaming platform where players can join tournaments, track performance, and engage in exciting challenges with a modern and interactive interface.",
-    frontend: "Next.js, SCSS, Tailwind CSS, NextAuth",
-    backend: "PostgreSQL",
-    duration: "2 months",
-    link: "https://ubehero.vercel.app/",
-  },
-],
+    gaming: [
+      {
+        title: "UBE HERO",
+        image: ubehero,
+        desc: "UBE HERO is a competitive gaming platform where players can join tournaments, track performance, and engage in exciting challenges with a modern and interactive interface.",
+        frontend: "Next.js, SCSS, Tailwind CSS, NextAuth",
+        backend: "PostgreSQL",
+        duration: "2 months",
+        link: "https://ubehero.vercel.app/",
+      },
+    ],
 
     // mobile: [
     //   {
@@ -224,7 +224,7 @@ gaming: [
         <div className="flex justify-center flex-wrap gap-3 mb-8">
           <button
             onClick={() => setSelectedCategory("all")}
-            className={`px-4 py-2 text-sm cursor-pointer rounded-lg ${
+            className={`px-4 py-2 uppercase text-sm cursor-pointer rounded-lg ${
               selectedCategory === "all" ? " text-gray-100" : " text-white"
             }`}
           >
@@ -235,7 +235,7 @@ gaming: [
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-2 text-sm cursor-pointer rounded-lg capitalize ${
+              className={`px-4 py-2 uppercase text-sm cursor-pointer rounded-lg  ${
                 selectedCategory === cat ? "text-gray-100" : " text-white"
               }`}
             >
@@ -261,7 +261,7 @@ gaming: [
                   <img
                     src={project.image?.src || "/placeholder.jpg"} // fallback if no image
                     alt={project.title}
-                    className="w-full h-auto min-h-full object-cover transition-transform duration-[3000ms] ease-in-out group-hover:translate-y-[calc(600px-100%)]"
+                    className="w-full h-auto min-h-full object-cover transition-transform duration-[10000ms] ease-linear group-hover:translate-y-[calc(600px-100%)]"
                     style={{ transform: "translateY(0)" }}
                   />
                 </div>
@@ -301,7 +301,7 @@ gaming: [
         {/* Category Buttons */}
         <div className="flex justify-center flex-wrap gap-1 mb-4">
           <button
-              className={`px-4 py-2 text-sm cursor-pointer rounded-lg ${
+            className={`px-4 py-2 text-sm cursor-pointer rounded-lg ${
               "all" === "all" ? " text-gray-100" : " text-white"
             }`}
           >
@@ -338,7 +338,7 @@ gaming: [
                   <img
                     src={project.image?.src || "/placeholder.jpg"} // fallback if no image
                     alt={project.title}
-                    className="w-full h-auto min-h-full object-cover transition-transform duration-[3000ms] ease-in-out group-hover:translate-y-[calc(600px-100%)]"
+                    className="w-full h-auto min-h-full object-cover transition-transform duration-[10000ms] ease-linear group-hover:translate-y-[calc(600px-100%)]"
                     style={{ transform: "translateY(0)" }}
                   />
                 </div>
@@ -374,8 +374,6 @@ gaming: [
           <p className="text-gray-300">No projects found.</p>
         )}
       </div>
-      
-
     </div>
   );
 }
