@@ -6,7 +6,7 @@ import Link from "next/link";
 const HomeJobBoard = () => {
   // Array of furniture items (you can replace with your actual data)
   const furnitureItems = [
-    { id: 1, name: "Tutor Tree", image: tutorTree },
+    { id: 1, name: "Tutor Tree", image: tutorTree, link: "https://66f2b09a38f9aa0084e219af--magical-souffle-89638e.netlify.app/", },
     // { id: 2, name: "Bedroom", image: furniture },
     // { id: 3, name: "Dining Room", image: furniture },
     // { id: 4, name: "Dining Room", image: furniture },
@@ -31,7 +31,13 @@ const HomeJobBoard = () => {
 
         <div className="grid grid-cols-1 mt-10">
           {furnitureItems.map((item) => (
-            <div
+               <a
+                href={furnitureItems[0].link}
+                target="_blank"
+                rel="noopener noreferrer"
+               
+                className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] block">
+                  <div
               key={item.id}
               className="relative group overflow-hidden rounded-lg shadow-lg h-[600px]"
             >
@@ -52,6 +58,8 @@ const HomeJobBoard = () => {
                 </h3>
               </div>
             </div>
+                </a>
+           
           ))}
         </div>
       </div>
@@ -86,11 +94,20 @@ const HomeJobBoard = () => {
                 />
               </div>
               {/* Overlay with title */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+               <a
+                href={furnitureItems[0].link}
+                target="_blank"
+                rel="noopener noreferrer"
+               
+                className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] block">
+                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
                 <h3 className="text-white text-xl font-semibold">
                   {item.name}
                 </h3>
               </div>
+                </a>
+
+              
             </div>
           ))}
         </div>
