@@ -113,10 +113,11 @@ const Page = () => {
           Blogs
         </h1>
         <p className="text-lg sm:text-base text-white/70 max-w-3xl">
-          We are a passionate team of developers, designers, and innovators
-          committed to delivering cutting-edge digital solutions that transform
-          businesses worldwide.
-        </p>
+  Explore insights, tutorials, best practices, and deep dives into modern web
+  development. From React and Next.js to UI/UX, backend systems, and deployment
+  strategies — stay updated with the latest trends and techniques that shape the
+  digital world.
+</p>
      
       </div>
 
