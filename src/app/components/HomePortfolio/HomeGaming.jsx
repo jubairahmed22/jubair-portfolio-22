@@ -105,7 +105,7 @@ const HomeGaming = () => {
                 rel="noopener noreferrer"
                 className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] block"
               >
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent ">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
                   <h3 className="text-white text-xl font-semibold">
                     {item.name}
                   </h3>
