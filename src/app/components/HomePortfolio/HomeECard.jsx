@@ -8,9 +8,9 @@ import Link from "next/link";
 const HomeECard = () => {
   // Array of furniture items (you can replace with your actual data)
   const furnitureItems = [
-    { id: 1, name: "SERIN BEAUTY SHOP", image: serin },
-    { id: 2, name: "BOOK SHOP", image: bookForest },
-    { id: 3, name: "MY COLOR EVENT", image: myColor },
+    { id: 1, name: "SERIN BEAUTY SHOP", image: serin, link: "https://www.serinbeautyshop.com", },
+    { id: 2, name: "BOOK SHOP", image: bookForest, link: "https://www.bookforest.net", },
+    { id: 3, name: "MY COLOR EVENT", image: myColor, link: "https://www.mycolorevents.com/", },
     // { id: 4, name: "Dining Room", image: furniture },
   ];
 
@@ -46,12 +46,20 @@ const HomeECard = () => {
   style={{ transform: "translateY(0)" }}
         />
       </div>
-      {/* Overlay with title */}
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+         {/* Overlay with title */}
+               <a
+                href={furnitureItems[0].link}
+                target="_blank"
+                rel="noopener noreferrer"
+               
+                className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] block">
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
         <h3 className="text-white text-xl font-semibold">
           {furnitureItems[0].name}
         </h3>
       </div>
+                </a>
+    
     </div>
   )}
 </div>
@@ -70,10 +78,18 @@ const HomeECard = () => {
           style={{ transform: "translateY(0)" }}
         />
       </div>
-      {/* Overlay with title */}
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+       {/* Overlay with title */}
+               <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+               
+                className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] block">
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
         <h3 className="text-white text-xl font-semibold">{item.name}</h3>
       </div>
+                </a>
+   
     </div>
   ))}
 </div>
@@ -95,7 +111,8 @@ const HomeECard = () => {
         </div>
         <div className="grid grid-cols-1 gap-6 mt-10">
           {furnitureItems.map((item) => (
-            <div
+            
+                   <div
               key={item.id}
               className="relative group overflow-hidden rounded-lg shadow-lg h-[600px]"
             >
@@ -110,12 +127,20 @@ const HomeECard = () => {
                 />
               </div>
               {/* Overlay with title */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+               <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+               
+                className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] block">
+               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
                 <h3 className="text-white text-xl font-semibold">
                   {item.name}
                 </h3>
               </div>
-            </div>
+                </a>
+             
+            </div>  
           ))}
         </div>
       </div>
