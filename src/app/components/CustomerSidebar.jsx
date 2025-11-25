@@ -215,7 +215,7 @@ export default function CustomerSidebar({ isCollapsed, toggleSidebar }) {
               isCollapsed ? "opacity-0 w-0" : "opacity-100 w-auto"
             }`}
           >
-            Book Forest
+            Jubair Ahmed
           </h2>
         </div>
 

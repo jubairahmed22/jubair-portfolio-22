@@ -5,8 +5,8 @@ import { signOut, useSession } from "next-auth/react";
 export default function Navbar() {
   const { data: session, status } = useSession();
 
-  console.log("token", session);
-
+  // console.log("token", session);
+ 
   if (status === "loading") {
     return <div className="bg-white p-4">Loading...</div>;
   }
@@ -21,7 +21,7 @@ export default function Navbar() {
             alt="Flowbite Logo"
           /> */}
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Book Forest
+            Jubair Ahmed
           </span>
         </a>
 

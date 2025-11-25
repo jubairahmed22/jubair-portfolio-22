@@ -114,7 +114,7 @@ const Page = () => {
 
     try {
       const response = await axios.post(
-        "https://books-server-001.vercel.app/pay-sslcommerz",
+        "http://localhost:5001/pay-sslcommerz",
         {
           total,
           email,
@@ -149,7 +149,7 @@ const Page = () => {
 
   try {
     const response = await axios.post(
-      "https://books-server-001.vercel.app/pay-cashondelivery",
+      "http://localhost:5001/pay-cashondelivery",
       {
         total,
         email,

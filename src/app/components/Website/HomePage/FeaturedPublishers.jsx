@@ -19,7 +19,7 @@ const FeaturedPublishers = () => {
     const fetchPopularBooks = async () => {
       try {
         const response = await fetch(
-          "https://books-server-001.vercel.app/api/web/all-publisher"
+          "http://localhost:5001/api/web/all-publisher"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch popular books");

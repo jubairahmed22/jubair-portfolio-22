@@ -29,3 +29,52 @@
 .authorTitle{
   font-size: 14px;
 }
+
+/* Add this inside your global CSS file */
+.slow-scroll {
+  transition: transform 20s ease-in-out;
+}
+
+
+/* Phone (small devices) */
+@media (max-width: 640px) {
+  /* Styles for phones */
+  .mobileHidden{
+    display: none;
+  }
+  .textHeading{
+    font-size: 24px;
+  }
+  .textStack{
+    font-size: 12px;
+  }
+  .textCodeDeploy{
+  font-size: 26px;
+}
+}
+
+/* Tablet (medium devices) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .webHidden{
+    display: none;
+  }
+  .heightClass {
+  height: auto;
+  min-height: 600px;
+}
+
+
+}
+
+/* Laptop & Higher (large devices) */
+@media (min-width: 1025px) {
+  /* Styles for laptops and desktops */
+  
+    .webHidden{
+    display: none;
+  }
+  .heightClass {
+  height: auto;
+  min-height: 600px;
+}
+}

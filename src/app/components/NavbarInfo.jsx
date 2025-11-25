@@ -174,7 +174,7 @@ const NavbarInfo = () => {
       <div className="w-full bg-white border-b border-b-[#E6E6E6]">
         <div className="max-w-[1400px] h-[75px] fontPoppins font-semibold  mx-auto flex justify-between  items-center">
           <div>
-             {/* <h1 className="text-2xl font-stretch-200% text-[#50C878] ">Book Forest</h1> */}
+             {/* <h1 className="text-2xl font-stretch-200% text-[#50C878] ">Jubair Ahmed</h1> */}
           </div>
           <div className="flex flex-row gap-10 textLink">
             <Link href="/">Home</Link>

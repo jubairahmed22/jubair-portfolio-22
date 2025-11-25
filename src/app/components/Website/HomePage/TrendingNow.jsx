@@ -16,7 +16,7 @@ const TrendingNow = () => {
   useEffect(() => {
     const fetchPopularBooks = async () => {
       try {
-        const response = await fetch('https://books-server-001.vercel.app/api/web/trending-now');
+        const response = await fetch('http://localhost:5001/api/web/trending-now');
         if (!response.ok) {
           throw new Error('Failed to fetch popular books');
         }

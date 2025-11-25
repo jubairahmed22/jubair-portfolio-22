@@ -22,7 +22,7 @@ const Page = () => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const response = await fetch("https://books-server-001.vercel.app/api/zone/pricing");
+      const response = await fetch("http://localhost:5001/api/zone/pricing");
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -112,7 +112,7 @@ const Page = () => {
         })),
       }));
 
-      const response = await fetch("https://books-server-001.vercel.app/api/zone/bulk", {
+      const response = await fetch("http://localhost:5001/api/zone/bulk", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -140,7 +140,7 @@ const Page = () => {
         ratesObject[zone] = newPricing[zone] || "";
       });
 
-      const response = await fetch("https://books-server-001.vercel.app/api/zone/pricing", {
+      const response = await fetch("http://localhost:5001/api/zone/pricing", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

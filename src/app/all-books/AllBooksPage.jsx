@@ -49,7 +49,7 @@ const AllBooksPage = () => {
     try {
       setInitialLoading(true);
       const params = new URLSearchParams(window.location.search);
-      const response = await axios.get(`https://books-server-001.vercel.app/api/admin/all-products?${params.toString()}`);
+      const response = await axios.get(`http://localhost:5001/api/admin/all-products?${params.toString()}`);
       setProducts(response.data.products);
       setTotalPages(response.data.totalPages);
     } catch (err) {
@@ -167,9 +167,9 @@ const AllBooksPage = () => {
         setIsFetchingPublishers(true);
 
         const [categoriesRes, authorsRes, publishersRes] = await Promise.all([
-          axios.get("https://books-server-001.vercel.app/api/admin/category"),
-          axios.get("https://books-server-001.vercel.app/api/admin/all-author"),
-          axios.get("https://books-server-001.vercel.app/api/admin/all-publisher")
+          axios.get("http://localhost:5001/api/admin/category"),
+          axios.get("http://localhost:5001/api/admin/all-author"),
+          axios.get("http://localhost:5001/api/admin/all-publisher")
         ]);
 
         setCategories(categoriesRes.data.products);
@@ -197,7 +197,7 @@ const AllBooksPage = () => {
 
       setIsFetchingSubCategories(true);
       try {
-        const response = await axios.get("https://books-server-001.vercel.app/api/admin/sub-category");
+        const response = await axios.get("http://localhost:5001/api/admin/sub-category");
         setSubCategories(response.data.products.filter(
           subCat => subCat.parentCategory.id === categoryParam
         ));
@@ -221,7 +221,7 @@ const AllBooksPage = () => {
 
       setIsFetchingChildCategories(true);
       try {
-        const response = await axios.get("https://books-server-001.vercel.app/api/admin/child-category");
+        const response = await axios.get("http://localhost:5001/api/admin/child-category");
         setChildCategories(response.data.products.filter(
           childCat => childCat.parentSubCategory.id === subCategoryParam
         ));

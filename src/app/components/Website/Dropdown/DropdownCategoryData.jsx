@@ -20,8 +20,8 @@ const DropdownCategoryData = ({setIsOpen}) => {
     const fetchData = async () => {
       try {
         const [subRes, childRes] = await Promise.all([
-          fetch("https://books-server-001.vercel.app/api/admin/sub-category"),
-          fetch("https://books-server-001.vercel.app/api/admin/child-category"),
+          fetch("http://localhost:5001/api/admin/sub-category"),
+          fetch("http://localhost:5001/api/admin/child-category"),
         ]);
 
         const subData = await subRes.json();
