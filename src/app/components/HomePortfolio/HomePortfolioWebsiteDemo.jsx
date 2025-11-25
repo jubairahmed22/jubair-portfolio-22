@@ -7,6 +7,7 @@ import fabrica from "../../../assets/fabrica.png";
 import taxage from "../../../assets/taxage.png";
 import '../../../styles/homePage.css';
 import next from "next";
+import Link from "next/link";
 
 const HomePortfolioWebsiteDemo = () => {
   // Array of furniture items (you can replace with your actual data)
@@ -29,9 +30,11 @@ const HomePortfolioWebsiteDemo = () => {
 
           <hr className="flex-grow border-t border-gray-600 mx-4" />
 
-          <button className="bg-white rounded-full text-black fontPoppins px-6 py-2 font-semibold whitespace-nowrap">
+          <Link href="/projects">
+            <button className="bg-white rounded-full text-black fontPoppins px-6 py-2 font-semibold whitespace-nowrap">
             View All
           </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mt-10">
@@ -68,9 +71,11 @@ const HomePortfolioWebsiteDemo = () => {
 
           <hr className="flex-grow border-t border-gray-600 mx-4" />
 
-          <button className="bg-white rounded-full text-[8px] text-black fontPoppins px-4 py-2 font-semibold whitespace-nowrap">
+          <Link href="/projects">
+            <button className="bg-white rounded-full text-[8px] text-black fontPoppins px-4 py-2 font-semibold whitespace-nowrap">
             View All
           </button>
+          </Link>
         </div>
         <div className="grid grid-cols-1 gap-6 mt-10">
           {furnitureItems.reverse().map((item) => (

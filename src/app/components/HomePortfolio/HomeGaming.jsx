@@ -1,6 +1,7 @@
 import React from "react";
 import ube from "../../../assets/ubeheross.png";
 import '../../../styles/homePage.css';
+import Link from "next/link";
 
 const HomeGaming = () => {
   // Array of furniture items (you can replace with your actual data)
@@ -21,9 +22,11 @@ const HomeGaming = () => {
 
           <hr className="flex-grow border-t border-gray-600 mx-4" />
 
-          <button className="bg-white rounded-full text-black fontPoppins px-6 py-2 font-semibold whitespace-nowrap">
+          <Link href="/projects">
+            <button className="bg-white rounded-full text-black fontPoppins px-6 py-2 font-semibold whitespace-nowrap">
             View All
           </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 mt-10">
@@ -60,9 +63,11 @@ const HomeGaming = () => {
 
           <hr className="flex-grow border-t border-gray-600 mx-4" />
 
-          <button className="bg-white rounded-full text-[8px] text-black fontPoppins px-4 py-2 font-semibold whitespace-nowrap">
+          <Link href="/projects">
+           <button className="bg-white rounded-full text-[8px] text-black fontPoppins px-4 py-2 font-semibold whitespace-nowrap">
             View All
           </button>
+          </Link>
         </div>
         <div className="grid grid-cols-1 gap-6 mt-10">
           {furnitureItems.map((item) => (
