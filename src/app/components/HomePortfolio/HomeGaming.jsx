@@ -103,9 +103,9 @@ const HomeGaming = () => {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] "
+                className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] block"
               >
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent ">
                   <h3 className="text-white text-xl font-semibold">
                     {item.name}
                   </h3>
