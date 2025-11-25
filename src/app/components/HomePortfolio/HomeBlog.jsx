@@ -11,71 +11,101 @@ import {
 } from "@heroicons/react/24/outline";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import "../../../styles/homePage.css";
+import Link from "next/link";
 
 
 const HomeBlog = () => {
-  const services = [
+  
+   const services = [
     {
       icon: <CodeBracketIcon className="w-10 h-10 text-white" />,
-      title: "Custom Web Development",
-      color: "white",
+      title: "Mastering Next.js 15",
       description:
-        "Tailored solutions built with React, Next.js for blazing fast performance",
+        "A deep dive into server components, turbo caching, and how to build lightning-fast web applications using the latest Next.js features.",
     },
     {
       icon: <DevicePhoneMobileIcon className="w-10 h-10 text-white" />,
-      title: "Responsive UI/UX",
-      color: "white",
+      title: "Why Responsive Design Still Matters in 2025",
       description:
-        "Pixel-perfect designs that work flawlessly across all devices",
+        "A breakdown of modern UI/UX trends and why mobile-first design remains essential for user retention.",
     },
     {
       icon: <RocketLaunchIcon className="w-10 h-10 text-white" />,
-      title: "Rapid Prototyping",
-      color: "white",
-      description: "Transform ideas into working prototypes in just 1 week",
+      title: "Build MVPs in Under a Week",
+      description:
+        "A practical guide to rapid prototyping using React, Tailwind, and Firebase to launch ideas fast.",
     },
     {
       icon: <ServerStackIcon className="w-10 h-10 text-white" />,
-      title: "Backend Solutions",
-      color: "white",
-      description: "Scalable Node.js, Express, and database architectures",
+      title: "Node.js Architecture for Scalable Apps",
+      description:
+        "Explore microservices, queues, caching, and best practices for building large distributed systems.",
     },
     {
       icon: <ShieldCheckIcon className="w-10 h-10 text-white" />,
-      title: "Secure Applications",
-      color: "white",
-      description: "Built-in security best practices from day one",
+      title: "Security Checklist for Modern Developers",
+      description:
+        "Everything you must implement — from JWT hardening to rate limiting and CSRF protection.",
     },
     {
       icon: <ArrowsPointingOutIcon className="w-10 h-10 text-white" />,
-      title: "Performance Optimization",
-      color: "white",
-      description: "Lightning-fast load times and smooth user experiences",
+      title: "Front-End Performance Optimization",
+      description:
+        "How to reduce bundle size, improve TTFB, and achieve 95+ Lighthouse scores consistently.",
     },
     {
       icon: <CodeBracketIcon className="w-10 h-10 text-white" />,
-      title: "API Integration",
-      color: "white",
-      description: "Seamless integration with third-party APIs and services",
+      title: "The Future of API Development",
+      description:
+        "REST vs GraphQL vs gRPC — which one should you choose for your next project?",
     },
     {
       icon: <DevicePhoneMobileIcon className="w-10 h-10 text-white" />,
-      title: "Mobile-First Design",
-      color: "white",
-      description: "Prioritizing mobile experience for modern users",
+      title: "Design Systems That Scale",
+      description:
+        "How to create a unified component library using Tailwind and Radix UI for teams.",
     },
     {
       icon: <RocketLaunchIcon className="w-10 h-10 text-white" />,
-      title: "SEO Optimization",
-      color: "white",
-      description: "Built-in SEO best practices for better visibility",
+      title: "SEO for Developers",
+      description:
+        "Technical SEO fundamentals — sitemaps, schema markup, metadata, indexing, and page experience.",
     },
     {
       icon: <ServerStackIcon className="w-10 h-10 text-white" />,
-      title: "Cloud Deployment",
-      color: "white",
-      description: "Easy deployment to AWS, Vercel, and other cloud platforms",
+      title: "Deploying Apps Like a Pro",
+      description:
+        "How to deploy full-stack apps on Vercel, AWS, or Docker with CI/CD pipeline integration.",
+    },
+    {
+      icon: <ShieldCheckIcon className="w-10 h-10 text-white" />,
+      title: "Authentication Made Simple",
+      description:
+        "Understanding OAuth, JWTs, sessions, refresh tokens, and securing user data.",
+    },
+    {
+      icon: <ArrowsPointingOutIcon className="w-10 h-10 text-white" />,
+      title: "The Art of Clean Code",
+      description:
+        "Best practices for writing readable, maintainable, and scalable code in large codebases.",
+    },
+    {
+      icon: <CodeBracketIcon className="w-10 h-10 text-white" />,
+      title: "Why TypeScript Dominates 2025",
+      description:
+        "The real-world benefits of TypeScript and how it prevents bugs before they happen.",
+    },
+    {
+      icon: <DevicePhoneMobileIcon className="w-10 h-10 text-white" />,
+      title: "Ultimate Guide to UX Psychology",
+      description:
+        "Learn how human behavior, patterns, and perception influence great product design.",
+    },
+    {
+      icon: <RocketLaunchIcon className="w-10 h-10 text-white" />,
+      title: "Building High-Conversion Landing Pages",
+      description:
+        "How to structure landing pages that drive sales, signups, and user engagement.",
     },
   ];
 
@@ -106,9 +136,11 @@ const HomeBlog = () => {
 
           <hr className="flex-grow border-t border-gray-600 mx-4" />
 
-          <button className="bg-white rounded-full text-black fontPoppins px-6 py-2 font-semibold whitespace-nowrap">
+          <Link href="/blogs">
+            <button className="bg-white rounded-full text-black fontPoppins px-6 py-2 font-semibold whitespace-nowrap">
             View All
           </button>
+          </Link>
         </div>
         
         <div className="relative">

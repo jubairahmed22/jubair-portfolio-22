@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../styles/homePage.css";
+import Link from "next/link";
 
 const HomeCrm = () => {
   return (
@@ -29,16 +30,17 @@ const HomeCrm = () => {
         </div>
         <div className="max-w-6xl mx-auto px-4 w-full webHidden">
           <div className="flex flex-row items-center justify-between gap-4 mb-10">
-          <h1 className="textHeading italic text-white font-bold whitespace-nowrap">
-            Custom Dashboard
-          </h1>
+            <h1 className="textHeading italic text-white font-bold whitespace-nowrap">
+              Custom Dashboard
+            </h1>
 
-          <hr className="flex-grow border-t border-gray-600 mx-4" />
-
-          <button className="bg-white rounded-full text-[8px] text-black fontPoppins px-4 py-2 font-semibold whitespace-nowrap">
-            View All
-          </button>
-        </div>
+            <hr className="flex-grow border-t border-gray-600 mx-4" />
+            <Link href="/services/crm-dev">
+              <button className="bg-white rounded-full text-[8px] text-black fontPoppins px-4 py-2 font-semibold whitespace-nowrap">
+                View All
+              </button>
+            </Link>
+          </div>
 
           {/* Added image section */}
           <div className="w-full rounded-lg overflow-hidden">
