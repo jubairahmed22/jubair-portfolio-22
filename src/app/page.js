@@ -19,6 +19,7 @@ import HomeUiUx from "../../src/app/components/HomePortfolio/HomeUiUx.jsx";
 import Approch from "../../src/app/components/HomePortfolio/Approch.jsx";
 import HomeBlog from "../../src/app/components/HomePortfolio/HomeBlog.jsx";
 import HomeHeroTwo from "../../src/app/components/HomePortfolio/HomeHeroTwo.jsx";
+import Pricing from "../../src/app/components/HomePortfolio/Pricing";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       <HomeDeliverInfo></HomeDeliverInfo>
 
       <HomeContact></HomeContact>
+      <Pricing></Pricing>
       <HomeBlog></HomeBlog>
     </div>
   );
