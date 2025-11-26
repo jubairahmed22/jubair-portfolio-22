@@ -107,7 +107,7 @@ const NavPortfolio = () => {
               href="/about"
               className="text-gray-200 hover:text-white duration-300"
             >
-              About Us
+              About
             </Link>
           </div>
 
@@ -359,7 +359,7 @@ const NavPortfolio = () => {
             onClick={toggleSidebar}
             className="text-gray-200 hover:text-white duration-300 py-2"
           >
-            About Us
+            About
           </Link>
           <Link
             href="/blogs"

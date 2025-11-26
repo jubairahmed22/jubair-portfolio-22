@@ -66,10 +66,7 @@ const AboutUsPage = () => {
           committed to delivering cutting-edge digital solutions that transform
           businesses worldwide.
         </p>
-        <button className="relative rounded-full text-md font-medium bg-white/10 hover:bg-white/20 active:bg-white/30 cursor-pointer backdrop-blur-2xl text-white px-8 py-3 border border-white/20 hover:border-white/40 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-white/50 shadow-lg hover:shadow-xl overflow-hidden group mt-4">
-          <span className="relative z-10">Contact Us</span>
-          <span className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-        </button>
+
       </div>
 
       {/* Mission & Vision */}
