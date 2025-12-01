@@ -141,7 +141,7 @@ export default function AboutUsPage() {
             </h3>
             <p className="text-blue-300 mt-1">Full-Stack Developer (6 Months)</p>
             <p className="text-white/70 mt-3 text-sm">
-              Worked as a React & Node.js developer focused on building dynami,
+              Worked as a React & Node.js developer focused on building dynamic,
               fast, and scalable applications for global and local clients.
             </p>
           </motion.div>
