@@ -63,7 +63,7 @@ const Footer = () => {
               </Link>
               <Link href="">
                 <h1 className="text-[16px] font-medium  text-[#8F8F8F]">
-                  Graphics Desig
+                  Graphics Design
                 </h1>
               </Link>
               <Link href="">
