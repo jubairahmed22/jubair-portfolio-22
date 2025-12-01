@@ -113,63 +113,68 @@ const PortfolioSlider = () => {
               </button>
             </div>
             <div className="flex flex-row sm:flex-row justify-center lg:w-[50%] md:w-[50%] sm:w-full mx-auto items-center gap-4 pb-8 md:pb-0">
-              <button className="relative overflow-hidden glass-liquid-outline-button font-bold py-3 px-6 rounded-full w-full sm:w-auto transition-all duration-500 group">
-                <span className="relative z-10">Download Resume</span>
-                <style jsx>{`
-                  .glass-liquid-outline-button {
-                    background: transparent;
-                    border: 2px solid rgba(255, 255, 255, 0.5);
-                    color: rgba(255, 255, 255, 0.9);
-                    position: relative;
-                  }
+  <button className="relative overflow-hidden glass-liquid-outline-button font-bold py-3 px-6 rounded-full w-full sm:w-auto transition-all duration-500 group flex items-center gap-2">
+    <span className="relative z-10 flex items-center gap-2">
+      <FiDownload className="text-xl" />
+      Download Resume
+    </span>
 
-                  .glass-liquid-outline-button:hover {
-                    color: white;
-                    border-color: rgba(255, 255, 255, 0.8);
-                    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-                  }
+    <style jsx>{`
+      .glass-liquid-outline-button {
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.9);
+        position: relative;
+      }
 
-                  .glass-liquid-outline-button::before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: -100%;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(
-                      90deg,
-                      transparent,
-                      rgba(255, 255, 255, 0.1),
-                      transparent
-                    );
-                    transition: all 0.6s ease;
-                  }
+      .glass-liquid-outline-button:hover {
+        color: white;
+        border-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      }
 
-                  .glass-liquid-outline-button:hover::before {
-                    left: 100%;
-                  }
+      .glass-liquid-outline-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        transition: all 0.6s ease;
+      }
 
-                  .glass-liquid-outline-button::after {
-                    content: "";
-                    position: absolute;
-                    inset: 0;
-                    border-radius: 9999px;
-                    padding: 2px;
-                    background: linear-gradient(
-                      45deg,
-                      rgba(255, 255, 255, 0.3),
-                      rgba(255, 255, 255, 0.1),
-                      rgba(255, 255, 255, 0.3)
-                    );
-                    -webkit-mask: linear-gradient(#fff 0 0) content-box,
-                      linear-gradient(#fff 0 0);
-                    -webkit-mask-composite: xor;
-                    mask-composite: exclude;
-                    pointer-events: none;
-                  }
-                `}</style>
-              </button>
-            </div>
+      .glass-liquid-outline-button:hover::before {
+        left: 100%;
+      }
+
+      .glass-liquid-outline-button::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 9999px;
+        padding: 2px;
+        background: linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.3)
+        );
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+      }
+    `}</style>
+  </button>
+</div>
+
           </div>
         </div>
       </div>
@@ -252,65 +257,70 @@ const PortfolioSlider = () => {
     </button>
   </div>
 
-  {/* Portfolio Button */}
-  <div className="flex  flex-row sm:flex-row justify-center lg:w-auto md:w-auto sm:w-full mx-auto items-center  pb-6 md:pb-0">
-    <button className="relative overflow-hidden glass-liquid-outline-button font-semibold py-2 px-4 rounded-full text-sm sm:text-base w-auto transition-all duration-500 group">
-      <span className="relative z-10">Download Resume</span>
-      <style jsx>{`
-        .glass-liquid-outline-button {
-          background: transparent;
-          border: 2px solid rgba(255, 255, 255, 0.5);
-          color: rgba(255, 255, 255, 0.9);
-          position: relative;
-        }
+{/* Portfolio Button */}
+<div className="flex flex-row sm:flex-row justify-center lg:w-auto md:w-auto sm:w-full mx-auto items-center pb-6 md:pb-0">
+  <button className="relative overflow-hidden glass-liquid-outline-button font-semibold py-2 px-4 rounded-full text-sm sm:text-base w-auto transition-all duration-500 group flex items-center gap-2">
+    <span className="relative z-10 flex items-center gap-2">
+      <FiDownload className="text-base sm:text-lg" />
+      Download Resume
+    </span>
 
-        .glass-liquid-outline-button:hover {
-          color: white;
-          border-color: rgba(255, 255, 255, 0.8);
-          box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-        }
+    <style jsx>{`
+      .glass-liquid-outline-button {
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.9);
+        position: relative;
+      }
 
-        .glass-liquid-outline-button::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(
-            90deg,
-            transparent,
-            rgba(255, 255, 255, 0.1),
-            transparent
-          );
-          transition: all 0.6s ease;
-        }
+      .glass-liquid-outline-button:hover {
+        color: white;
+        border-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      }
 
-        .glass-liquid-outline-button:hover::before {
-          left: 100%;
-        }
+      .glass-liquid-outline-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        transition: all 0.6s ease;
+      }
 
-        .glass-liquid-outline-button::after {
-          content: "";
-          position: absolute;
-          inset: 0;
-          border-radius: 9999px;
-          padding: 2px;
-          background: linear-gradient(
-            45deg,
-            rgba(255, 255, 255, 0.3),
-            rgba(255, 255, 255, 0.1),
-            rgba(255, 255, 255, 0.3)
-          );
-          -webkit-mask: linear-gradient(#fff 0 0) content-box,
-            linear-gradient(#fff 0 0);
-          -webkit-mask-composite: xor;
-          mask-composite: exclude;
-          pointer-events: none;
-        }
-      `}</style>
-    </button>
-  </div>
+      .glass-liquid-outline-button:hover::before {
+        left: 100%;
+      }
+
+      .glass-liquid-outline-button::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 9999px;
+        padding: 2px;
+        background: linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.3)
+        );
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+      }
+    `}</style>
+  </button>
+</div>
+
 </div>
 
       
