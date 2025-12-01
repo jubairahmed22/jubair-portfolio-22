@@ -4,7 +4,10 @@ import React, { useState } from "react";
 import '../../../styles/homePage.css';
 
 import { motion } from "framer-motion";
-import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiTailwindcss, SiXiaomi, SiMongodb, SiMongoose, SiPostgresql } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiTailwindcss, SiXiaomi, SiMongodb, SiMongoose, SiPostgresql,  } from "react-icons/si";
+import { FileDown } from "lucide-react";
+
+
 
 const techStack = [
   { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
@@ -115,7 +118,7 @@ const PortfolioSlider = () => {
             <div className="flex flex-row sm:flex-row justify-center lg:w-[50%] md:w-[50%] sm:w-full mx-auto items-center gap-4 pb-8 md:pb-0">
   <button className="relative overflow-hidden glass-liquid-outline-button font-bold py-3 px-6 rounded-full w-full sm:w-auto transition-all duration-500 group flex items-center gap-2">
     <span className="relative z-10 flex items-center gap-2">
-      <FiDownload className="text-xl" />
+      <FileDown className="text-xl" />
       Download Resume
     </span>
 
@@ -261,7 +264,7 @@ const PortfolioSlider = () => {
 <div className="flex flex-row sm:flex-row justify-center lg:w-auto md:w-auto sm:w-full mx-auto items-center pb-6 md:pb-0">
   <button className="relative overflow-hidden glass-liquid-outline-button font-semibold py-2 px-4 rounded-full text-sm sm:text-base w-auto transition-all duration-500 group flex items-center gap-2">
     <span className="relative z-10 flex items-center gap-2">
-      <FiDownload className="text-base sm:text-lg" />
+      <FileDown className="text-base sm:text-lg" />
       Download Resume
     </span>
 
