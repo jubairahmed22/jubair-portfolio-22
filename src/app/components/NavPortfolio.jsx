@@ -294,65 +294,13 @@ const NavPortfolio = () => {
           </div>
 
           {/* Mobile Projects Dropdown */}
-          <div className="flex flex-col">
-            <button
-              onClick={() => toggleMobileDropdown("projects")}
-              className="flex items-center justify-between text-gray-200 hover:text-white duration-300 py-2"
-            >
-              <span>Projects</span>
-              {mobileDropdown === "projects" ? (
-                <ChevronUp size={20} />
-              ) : (
-                <ChevronDown size={20} />
-              )}
-            </button>
-            {mobileDropdown === "projects" && (
-              <div className="ml-4 mt-2 space-y-3">
-                <Link
-                  href="/projects/portfolio"
-                  onClick={toggleSidebar}
-                  className="block text-gray-300 hover:text-white"
-                >
-                  Portfolio Website
-                </Link>
-                <Link
-                  href="/projects/mobile"
-                  onClick={toggleSidebar}
-                  className="block text-gray-300 hover:text-white"
-                >
-                  Mobile Projects
-                </Link>
-                <Link
-                  href="/projects/ai"
-                  onClick={toggleSidebar}
-                  className="block text-gray-300 hover:text-white"
-                >
-                  AI Projects
-                </Link>
-                <Link
-                  href="/projects/ecommerce"
-                  onClick={toggleSidebar}
-                  className="block text-gray-300 hover:text-white"
-                >
-                  E-commerce
-                </Link>
-                <Link
-                  href="/projects/enterprise"
-                  onClick={toggleSidebar}
-                  className="block text-gray-300 hover:text-white"
-                >
-                  Enterprise
-                </Link>
-                <Link
-                  href="/projects/startup"
-                  onClick={toggleSidebar}
-                  className="block text-gray-300 hover:text-white"
-                >
-                  Startup
-                </Link>
-              </div>
-            )}
-          </div>
+          <Link
+            href="/projects"
+            onClick={toggleSidebar}
+            className="text-gray-200 hover:text-white duration-300 py-2"
+          >
+            Projects
+          </Link>
 
           <Link
             href="/about"

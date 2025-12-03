@@ -116,7 +116,8 @@ const PortfolioSlider = () => {
               </button>
             </div>
             <div className="flex flex-row sm:flex-row justify-center lg:w-[50%] md:w-[50%] sm:w-full mx-auto items-center gap-4 pb-8 md:pb-0">
-  <button className="relative overflow-hidden glass-liquid-outline-button font-bold py-3 px-6 rounded-full w-full sm:w-auto transition-all duration-500 group flex items-center gap-2">
+  <a href="https://docs.google.com/document/d/1Rx9rALdJ50RINF_O-I6HydRNMc_K92qfZrMjHSTRYqI/edit?usp=sharing" target="_blank">
+    <button className="relative overflow-hidden glass-liquid-outline-button font-bold py-3 px-6 rounded-full w-full sm:w-auto transition-all duration-500 group flex items-center justify-center gap-2">
     <span className="relative z-10 flex items-center gap-2">
       <FileDown className="text-xl" />
       Download Resume
@@ -176,6 +177,7 @@ const PortfolioSlider = () => {
       }
     `}</style>
   </button>
+  </a>
 </div>
 
           </div>
@@ -208,8 +210,7 @@ const PortfolioSlider = () => {
   {/* Schedule Button */}
   <div className="flex  flex-row sm:flex-row justify-center sm:w-full mx-auto items-center  pb-6 md:pb-0">
     <button
-      className={`relative overflow-hidden glass-liquid-button font-semibold py-2 px-4 rounded-full text-sm sm:text-base w-auto transition-all duration-500 ${
-        isDisabled
+      className={`relative overflow-hidden glass-liquid-button font-semibold py-2 px-4 rounded-full text-[10px]
           ? "opacity-50 cursor-not-allowed"
           : "hover:shadow-md"
       }`}
@@ -261,10 +262,11 @@ const PortfolioSlider = () => {
   </div>
 
 {/* Portfolio Button */}
-<div className="flex flex-row sm:flex-row justify-center lg:w-auto md:w-auto sm:w-full mx-auto items-center pb-6 md:pb-0">
-  <button className="relative overflow-hidden glass-liquid-outline-button font-semibold py-2 px-4 rounded-full text-sm sm:text-base w-auto transition-all duration-500 group flex items-center gap-2">
+<a href="https://docs.google.com/document/d/1Rx9rALdJ50RINF_O-I6HydRNMc_K92qfZrMjHSTRYqI/edit?usp=sharing" target="_blank">
+  <div className="flex flex-row sm:flex-row justify-center lg:w-auto md:w-auto sm:w-full mx-auto items-center pb-6 md:pb-0">
+  <button className="relative overflow-hidden glass-liquid-outline-button font-semibold py-2 px-4 rounded-full text-[10px] w-auto transition-all duration-500 group flex items-center gap-2">
     <span className="relative z-10 flex items-center gap-2">
-      <FileDown className="text-base sm:text-lg" />
+      <FileDown className="w-4 h-4" />
       Download Resume
     </span>
 
@@ -323,6 +325,7 @@ const PortfolioSlider = () => {
     `}</style>
   </button>
 </div>
+</a>
 
 </div>
 
