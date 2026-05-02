@@ -2,6 +2,9 @@
 
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
+import Image from "next/image";
+
+// Asset imports
 import miraicbd from "../../assets/miracbdss.png";
 import nexttech from "../../assets/nexttechss.png";
 import ubehero from "../../assets/ubeheross.png";
@@ -13,14 +16,31 @@ import xutech from "../../assets/xutech.png";
 import jubair from "../../assets/jubair-portfolio.png";
 import taxage from "../../assets/taxage.png";
 import fabrica from "../../assets/fabrica.png";
+import hrm from "../../assets/hrm.png"; 
+
 import "../../styles/homePage.css";
 
 export default function ProjectsPage() {
   const searchParams = useSearchParams();
   const categoryFromQuery = searchParams.get("category");
 
-  // Fake data for projects
   const projectsData = {
+    saas: [
+      {
+        title: "ENVERIA HRM",
+        image: hrm,
+        desc: "A comprehensive Human Resource Management system featuring real-time attendance tracking, payroll automation, and employee lifecycle management with Socket.io integration.",
+        frontend: "Next.js, React, Tailwind CSS",
+        backend: "Node.js, Express, MongoDB, Socket.io",
+        duration: "4 months",
+        link: "https://hrm-client-lac.vercel.app/",
+        credentials: [
+          { role: "Super-Admin", user: "jubairahmed060@gmail.com", pass: "jubairahmed060" },
+          { role: "Admin", user: "ademize360@gmail.com", pass: "ademize360" },
+          { role: "Employee", user: "nafis.ais.bup@gmail.com", pass: "nafis.ais.bup" },
+        ],
+      },
+    ],
     ecommerce: [
       {
         title: "SERIN",
@@ -50,13 +70,12 @@ export default function ProjectsPage() {
         link: "https://www.mycolorevents.com/",
       },
     ],
-
     web: [
       {
         title: "FABRICA",
         image: fabrica,
         desc: "We deliver premium aluminum & glass solutions — waterproof, noise-reducing, eco-friendly, and built to last.",
-        frontend: "Nextjs, Tailwind CSS",
+        frontend: "Next.js, Tailwind CSS",
         backend: "Node.js, Express, MongoDB",
         duration: "2 weeks",
         link: "https://www.fabrica.com.bd/",
@@ -65,7 +84,7 @@ export default function ProjectsPage() {
         title: "TEX EDGE AUTOMATION",
         image: taxage,
         desc: "Tex Edge Automation delivers advanced sewing automation solutions to empower garment factories to enhance productivity, quality, and efficiency.",
-        frontend: "Nextjs, Tailwind CSS",
+        frontend: "Next.js, Tailwind CSS",
         backend: "Node.js, Express, MongoDB",
         duration: "2 weeks",
         link: "https://client-2-iota.vercel.app/",
@@ -73,8 +92,8 @@ export default function ProjectsPage() {
       {
         title: "XUTECH",
         image: xutech,
-        desc: "MIRAICBD is a consultancy company website designed as a modern portfolio to showcase services, expertise, and client-focused solutions with a sleek and professional interface.",
-        frontend: "Nextjs, Tailwind CSS",
+        desc: "XUTECH is a consultancy company website designed as a modern portfolio to showcase services, expertise, and client-focused solutions with a sleek and professional interface.",
+        frontend: "Next.js, Tailwind CSS",
         backend: "Node.js, Express, MongoDB",
         duration: "2 weeks",
         link: "https://www.xutech.co/",
@@ -82,8 +101,8 @@ export default function ProjectsPage() {
       {
         title: "JUBAIR AHMED PORTFOLIO",
         image: jubair,
-        desc: "MIRAICBD is a consultancy company website designed as a modern portfolio to showcase services, expertise, and client-focused solutions with a sleek and professional interface.",
-        frontend: "Nextjs, Tailwind CSS",
+        desc: "Personal developer portfolio designed to showcase skills, experience, and custom software solutions with a clean, high-performance interface.",
+        frontend: "Next.js, Tailwind CSS",
         backend: "Node.js, Express, MongoDB",
         duration: "2 weeks",
         link: "https://jubair-ahmed.vercel.app/",
@@ -107,7 +126,6 @@ export default function ProjectsPage() {
         link: "https://www.nexttechitc.com/",
       },
     ],
-
     "job-board": [
       {
         title: "Tutor Tree",
@@ -119,7 +137,6 @@ export default function ProjectsPage() {
         link: "https://66f2b09a38f9aa0084e219af--magical-souffle-89638e.netlify.app/",
       },
     ],
-
     gaming: [
       {
         title: "UBE HERO",
@@ -131,83 +148,17 @@ export default function ProjectsPage() {
         link: "https://ubehero.vercel.app/",
       },
     ],
-
-    // mobile: [
-    //   {
-    //     title: "TravelMate",
-    //     image: furniture,
-    //     desc: "Mobile travel booking app.",
-    //     frontend: "React Native",
-    //     backend: "Express, MongoDB",
-    //     duration: "3 months",
-    //     link: "https://travelmate.com",
-    //   },
-    //   {
-    //     title: "FoodieApp",
-    //     image: furniture,
-    //     desc: "Mobile app for ordering food online.",
-    //     frontend: "Flutter",
-    //     backend: "Firebase",
-    //     duration: "2 months",
-    //     link: "https://foodieapp.com",
-    //   },
-    // ],
-    // uiux: [
-    //   {
-    //     title: "UI Kit",
-    //     image: furniture,
-    //     desc: "Reusable UI component library.",
-    //     frontend: "Figma, Tailwind",
-    //     backend: "N/A",
-    //     duration: "2 weeks",
-    //     link: "https://uikit.com",
-    //   },
-    //   {
-    //     title: "DesignX",
-    //     image: furniture,
-    //     desc: "Creative design system for apps.",
-    //     frontend: "Sketch, React",
-    //     backend: "N/A",
-    //     duration: "1 month",
-    //     link: "https://designx.com",
-    //   },
-    // ],
-    // "graphic-design": [
-    //   {
-    //     title: "LogoCraft",
-    //     image: furniture,
-    //     desc: "Professional logo design collection.",
-    //     frontend: "Illustrator",
-    //     backend: "N/A",
-    //     duration: "1 week",
-    //     link: "https://logocraft.com",
-    //   },
-    //   {
-    //     title: "PosterLab",
-    //     image: furniture,
-    //     desc: "Creative posters and flyers.",
-    //     frontend: "Photoshop",
-    //     backend: "N/A",
-    //     duration: "2 weeks",
-    //     link: "https://posterlab.com",
-    //   },
-    // ],
   };
 
-  // All category names
   const categories = Object.keys(projectsData);
-
-  // State for selected category
   const [selectedCategory, setSelectedCategory] = useState("all");
 
-  // Sync query param with state on page load
   useEffect(() => {
     if (categoryFromQuery && categories.includes(categoryFromQuery)) {
       setSelectedCategory(categoryFromQuery);
     }
-  }, [categoryFromQuery]);
+  }, [categoryFromQuery, categories]);
 
-  // Get projects to display
   let projectsToShow = [];
   if (selectedCategory === "all") {
     projectsToShow = categories.flatMap((cat) =>
@@ -218,162 +169,132 @@ export default function ProjectsPage() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-6 min-h-screen text-left text-xl fontPoppins">
-      <div className="w-full mobileHidden">
-        {/* Category Buttons */}
-        <div className="flex justify-center flex-wrap gap-3 mb-8">
+    <div className="max-w-5xl mx-auto px-4 py-12 min-h-screen fontPoppins text-left">
+      {/* Category Navigation Menu */}
+      <div className="flex justify-center flex-wrap gap-2 md:gap-3 mb-12">
+        <button
+          onClick={() => setSelectedCategory("all")}
+          className={`px-5 py-2.5 uppercase tracking-wide text-xs md:text-sm font-medium cursor-pointer rounded-xl transition-all duration-300  ${
+            selectedCategory === "all"
+              ? "text-white shadow-lg"
+              : "bg-transparent text-gray-400 border-gray-800 hover:text-white hover:border-gray-600"
+          }`}
+        >
+          All Projects
+        </button>
+
+        {categories.map((cat) => (
           <button
-            onClick={() => setSelectedCategory("all")}
-            className={`px-4 py-2 uppercase text-sm cursor-pointer rounded-lg ${
-              selectedCategory === "all" ? " text-gray-100" : " text-white"
+            key={cat}
+            onClick={() => setSelectedCategory(cat)}
+            className={`px-5 py-2.5 uppercase tracking-wide text-xs md:text-sm font-medium cursor-pointer rounded-xl transition-all duration-300 ${
+              selectedCategory === cat
+                ? "text-white shadow-lg"
+                : "bg-transparent text-gray-400 border-gray-800 hover:text-white hover:border-gray-600"
             }`}
           >
-            All
+            {cat.replace("-", " ")}
           </button>
+        ))}
+      </div>
 
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-2 uppercase text-sm cursor-pointer rounded-lg  ${
-                selectedCategory === cat ? "text-gray-100" : " text-white"
-              }`}
+      {/* Project Grid */}
+      {projectsToShow.length > 0 ? (
+        <div className="grid grid-cols-1 gap-8 md:gap-10">
+          {projectsToShow.map((project, idx) => (
+            <div
+              key={idx}
+              className="group relative flex flex-col md:flex-row w-full h-auto min-h-[480px] bg-zinc-950/40 border border-zinc-800/60 rounded-2xl overflow-hidden backdrop-blur-md shadow-2xl hover:border-zinc-700/80 transition-all duration-500 hover:shadow-[0_0_30px_-5px_rgba(255,255,255,0.03)]"
             >
-              {cat.replace("-", " ")}
-            </button>
-          ))}
-        </div>
-
-        {/* Project Grid */}
-        {projectsToShow.length > 0 ? (
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
-            {projectsToShow.map((project, idx) => (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={idx}
-                className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] block"
-              >
-                {/* Card container */}
-                <div className="absolute inset-0">
-                  {/* Image that will scroll on hover */}
-                  <img
-                    src={project.image?.src || "/placeholder.jpg"} // fallback if no image
-                    alt={project.title}
-                    className="w-full h-auto min-h-full object-cover transition-transform duration-[10000ms] ease-linear group-hover:translate-y-[calc(600px-100%)]"
-                    style={{ transform: "translateY(0)" }}
+              {/* Right Side: Showcase Image with hover vertical scrolling */}
+              <div className="relative w-full md:w-1/2 h-[420px] md:h-auto min-h-[380px] overflow-hidden bg-zinc-900 border-t md:border-t-0 md:border-l border-zinc-800/80 order-1 md:order-2">
+                <div className="absolute inset-0 select-none">
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} Preview`}
+                    placeholder="blur"
+                    className="w-full h-auto min-h-full object-top object-cover transition-transform duration-[7000ms] ease-in-out group-hover:translate-y-[calc(-100%+380px)] md:group-hover:translate-y-[calc(-100%+480px)]"
                   />
                 </div>
+              </div>
 
-                {/* Overlay with details */}
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-2xl p-4">
-                  <h3 className="text-white text-xl font-semibold">
+              {/* Left Side: Content Area */}
+              <div className="flex flex-col justify-between w-full md:w-1/2 p-6 sm:p-8 md:p-10 z-10 order-2 md:order-1">
+                <div>
+                  <span className="text-[10px] uppercase tracking-widest text-zinc-500 font-bold mb-3 block">
+                    {project.category ? project.category.replace("-", " ") : "Overview"}
+                  </span>
+                  
+                  <h3 className="text-white text-2xl md:text-3xl font-semibold tracking-tight mb-4 group-hover:text-zinc-100 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-gray-300 text-sm mb-2">{project.desc}</p>
-                  <p className="text-xs text-gray-400">
-                    <span className="font-semibold">Frontend:</span>{" "}
-                    {project.frontend}
+                  
+                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed font-light mb-6">
+                    {project.desc}
                   </p>
-                  <p className="text-xs text-gray-400">
-                    <span className="font-semibold">Backend:</span>{" "}
-                    {project.backend}
-                  </p>
-                  <p className="text-xs text-gray-400">
-                    <span className="font-semibold">Duration:</span>{" "}
-                    {project.duration}
-                  </p>
-                  {selectedCategory === "all" && (
-                    <p className="text-xs text-gray-500 mt-1 italic">
-                      {project.category.replace("-", " ")}
-                    </p>
+
+                  {/* Enhanced Demo Credentials Section */}
+                  {project.credentials && (
+                    <div className="mb-6 p-4 bg-zinc-900/80 border border-zinc-700/50 rounded-xl space-y-4">
+                      <div className="flex items-center gap-2 mb-1">
+                        <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                        <span className="text-[10px] font-bold text-zinc-300 uppercase tracking-widest">Demo Access Details</span>
+                      </div>
+                      
+                      <div className="grid gap-3">
+                        {project.credentials.map((cred, i) => (
+                          <div key={i} className="group/cred text-[11px] leading-tight">
+                            <p className="text-zinc-500 font-bold mb-1 uppercase tracking-tighter">{cred.role}</p>
+                            <div className="bg-black/40 p-2 rounded border border-zinc-800/50 group-hover/cred:border-zinc-600 transition-colors">
+                              <p className="text-zinc-300 select-all font-mono break-all cursor-text">
+                                <span className="text-zinc-600 mr-1 italic">Email:</span>{cred.user}
+                              </p>
+                              <p className="text-zinc-300 select-all font-mono mt-1 cursor-text">
+                                <span className="text-zinc-600 mr-1 italic">Pass:</span>{cred.pass}
+                              </p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   )}
                 </div>
-              </a>
-            ))}
-          </div>
-        ) : (
-          <p className="text-gray-300">No projects found.</p>
-        )}
-      </div>
-      <div className="w-full webHidden">
-        {/* Category Buttons */}
-        <div className="flex justify-center flex-wrap gap-1 mb-4">
-          <button
-            className={`px-4 py-2 text-sm cursor-pointer rounded-lg ${
-              "all" === "all" ? " text-gray-100" : " text-white"
-            }`}
-          >
-            All
-          </button>
 
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-2 text-sm cursor-pointer rounded-lg capitalize ${
-                selectedCategory === cat ? "text-gray-100" : " text-white"
-              }`}
-            >
-              {cat.replace("-", " ")}
-            </button>
+                <div className="mt-4">
+                  <div className="border-t border-zinc-800/80 pt-5 space-y-3 mb-6">
+                    <div className="flex justify-between items-center text-sm">
+                      <span className="text-zinc-500 font-medium">Frontend</span>
+                      <span className="text-zinc-300 font-normal">{project.frontend}</span>
+                    </div>
+                    <div className="flex justify-between items-center text-sm">
+                      <span className="text-zinc-500 font-medium">Backend</span>
+                      <span className="text-zinc-300 font-normal">{project.backend}</span>
+                    </div>
+                    <div className="flex justify-between items-center text-sm">
+                      <span className="text-zinc-500 font-medium">Timeframe</span>
+                      <span className="text-zinc-300 font-normal">{project.duration}</span>
+                    </div>
+                  </div>
+
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center w-full py-3 bg-white text-black font-bold rounded-lg text-sm transition-transform active:scale-95 hover:bg-zinc-200"
+                  >
+                    View Live Site
+                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
-
-        {/* Project Grid */}
-        {projectsToShow.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-            {projectsToShow.map((project, idx) => (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={idx}
-                className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] block"
-              >
-                {/* Card container */}
-                <div className="absolute inset-0">
-                  {/* Image that will scroll on hover */}
-                  <img
-                    src={project.image?.src || "/placeholder.jpg"} // fallback if no image
-                    alt={project.title}
-                    className="w-full h-auto min-h-full object-cover transition-transform duration-[10000ms] ease-linear group-hover:translate-y-[calc(600px-100%)]"
-                    style={{ transform: "translateY(0)" }}
-                  />
-                </div>
-
-                {/* Overlay with details */}
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-2xl p-4">
-                  <h3 className="text-white text-xl font-semibold">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-300 text-sm mb-2">{project.desc}</p>
-                  <p className="text-xs text-gray-400">
-                    <span className="font-semibold">Frontend:</span>{" "}
-                    {project.frontend}
-                  </p>
-                  <p className="text-xs text-gray-400">
-                    <span className="font-semibold">Backend:</span>{" "}
-                    {project.backend}
-                  </p>
-                  <p className="text-xs text-gray-400">
-                    <span className="font-semibold">Duration:</span>{" "}
-                    {project.duration}
-                  </p>
-                  {selectedCategory === "all" && (
-                    <p className="text-xs text-gray-500 mt-1 italic">
-                      {project.category.replace("-", " ")}
-                    </p>
-                  )}
-                </div>
-              </a>
-            ))}
-          </div>
-        ) : (
-          <p className="text-gray-300">No projects found.</p>
-        )}
-      </div>
+      ) : (
+        <div className="text-center py-12">
+          <p className="text-zinc-500 text-lg">No projects available in this category.</p>
+        </div>
+      )}
     </div>
   );
 }
