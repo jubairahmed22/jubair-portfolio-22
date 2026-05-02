@@ -18,6 +18,7 @@ import HomeContact from "../../src/app/components/HomePortfolio/HomeContact.jsx"
 import HomeUiUx from "../../src/app/components/HomePortfolio/HomeUiUx.jsx";
 import Approch from "../../src/app/components/HomePortfolio/Approch.jsx";
 import HomeBlog from "../../src/app/components/HomePortfolio/HomeBlog.jsx";
+import HomeHRM from "../../src/app/components/HomePortfolio/HomeHRM";
 import HomeHeroTwo from "../../src/app/components/HomePortfolio/HomeHeroTwo.jsx";
 import Pricing from "../../src/app/components/HomePortfolio/Pricing";
 
@@ -29,7 +30,7 @@ export default function Home() {
 
       {/* <HomeUiUx></HomeUiUx> */}
       <Approch></Approch>
-
+      <HomeHRM></HomeHRM>
       <HomeECard></HomeECard>
       <HomeJobBoard></HomeJobBoard>
       <HomePortfolioWebsiteDemo></HomePortfolioWebsiteDemo>

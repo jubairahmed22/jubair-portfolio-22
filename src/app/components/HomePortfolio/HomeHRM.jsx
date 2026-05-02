@@ -1,12 +1,12 @@
 import React from "react";
-import tutorTree from "../../../assets/tutortreess.png";
+import hrm from "../../../assets/hrm.png";
 import "../../../styles/homePage.css";
 import Link from "next/link";
 
 const HomeHRM = () => {
   // Array of furniture items (you can replace with your actual data)
   const furnitureItems = [
-    { id: 1, name: "Tutor Tree", image: tutorTree, link: "https://66f2b09a38f9aa0084e219af--magical-souffle-89638e.netlify.app/", },
+    { id: 1, name: "Tutor Tree", image: hrm, link: "https://hrm-client-lac.vercel.app/", },
     // { id: 2, name: "Bedroom", image: furniture },
     // { id: 3, name: "Dining Room", image: furniture },
     // { id: 4, name: "Dining Room", image: furniture },
@@ -17,14 +17,14 @@ const HomeHRM = () => {
       <div className="max-w-6xl mx-auto px-4 w-full mobileHidden">
         <div className="flex flex-row items-center justify-between gap-4">
           <h1 className="text-5xl italic text-white font-bold whitespace-nowrap">
-            Job Board
+            HR MANAGEMENT
           </h1>
 
           <hr className="flex-grow border-t border-gray-600 mx-4" />
 
           <Link href="/projects">
             <button className="bg-white rounded-full text-black fontPoppins px-6 py-2 font-semibold whitespace-nowrap">
-              View All
+              View All Projects
             </button>
           </Link>
         </div>
