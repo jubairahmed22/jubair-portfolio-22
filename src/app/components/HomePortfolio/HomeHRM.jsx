@@ -6,7 +6,7 @@ import Link from "next/link";
 const HomeHRM = () => {
   // Array of furniture items (you can replace with your actual data)
   const furnitureItems = [
-    { id: 1, name: "Tutor Tree", image: hrm, link: "https://hrm-client-lac.vercel.app/", },
+    { id: 1, name: "HR Management", image: hrm, link: "https://hrm-client-lac.vercel.app/", },
     // { id: 2, name: "Bedroom", image: furniture },
     // { id: 3, name: "Dining Room", image: furniture },
     // { id: 4, name: "Dining Room", image: furniture },
