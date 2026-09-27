@@ -1,114 +1,66 @@
 import React from "react";
 import hrm from "../../../assets/hrm.png";
+import rin from "../../../assets/rin.png";
 import "../../../styles/homePage.css";
 import Link from "next/link";
+import ProjectShowcaseCard from "./ProjectShowcaseCard";
+
+const projects = [
+  {
+    id: 1,
+    title: "HR Management System",
+    subtitle: "SaaS Platform",
+    desc: "A complete HRM platform with payroll, attendance tracking, employee management, and real-time Socket.io features.",
+    tech: ["Next.js", "Node.js", "MongoDB", "Socket.io"],
+    timeline: "4 Months",
+    link: "https://hrm-client-lac.vercel.app/",
+    image: hrm,
+    badge: "Enterprise SaaS",
+    label: "Real-time System",
+  },
+  {
+    id: 2,
+    title: "RIN Japanese Restaurant",
+    subtitle: "Restaurant Management & Payments",
+    desc: "A full restaurant ordering and management system for RIN Japanese in Hobart: online pickup and delivery orders, table reservations, and an admin dashboard with POS, floor plans and analytics. Payments run through Square, and paid orders are pushed straight to the Square POS to print kitchen tickets.",
+    tech: [
+      "Next.js",
+      "Node.js",
+      "MongoDB",
+      "Square API",
+      "Socket.io",
+      "Redis",
+      "Tailwind CSS",
+    ],
+    timeline: "3 Months",
+    link: "https://www.rinjapanese.com.au/",
+    image: rin,
+    badge: "Restaurant SaaS",
+    label: "Square Payments",
+  },
+];
 
 const HomeHRM = () => {
-  // Array of furniture items (you can replace with your actual data)
-  const furnitureItems = [
-    { id: 1, name: "HR Management", image: hrm, link: "https://hrm-client-lac.vercel.app/", },
-    // { id: 2, name: "Bedroom", image: furniture },
-    // { id: 3, name: "Dining Room", image: furniture },
-    // { id: 4, name: "Dining Room", image: furniture },
-  ];
-
   return (
     <div className="z-50 lg:pb-32 bg-transparent w-full py-10 flex items-center justify-center">
-      <div className="max-w-6xl mx-auto px-4 w-full mobileHidden">
+      <div className="max-w-6xl mx-auto px-4 w-full">
         <div className="flex flex-row items-center justify-between gap-4">
-          <h1 className="text-5xl italic text-white font-bold whitespace-nowrap">
-            HR MANAGEMENT
+          <h1 className="text-2xl sm:text-5xl italic text-white font-bold whitespace-nowrap">
+            SaaS PROJECTS
           </h1>
 
           <hr className="flex-grow border-t border-gray-600 mx-4" />
 
           <Link href="/projects">
-            <button className="bg-white rounded-full text-black fontPoppins px-6 py-2 font-semibold whitespace-nowrap">
+            <button className="bg-white rounded-full text-black fontPoppins text-xs sm:text-base px-4 sm:px-6 py-2 font-semibold whitespace-nowrap">
               View All Projects
             </button>
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 mt-10">
-          {furnitureItems.map((item) => (
-               <a
-                href={furnitureItems[0].link}
-                target="_blank"
-                rel="noopener noreferrer"
-               
-                className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] block">
-                  <div
-              key={item.id}
-              className="relative group overflow-hidden rounded-lg shadow-lg h-[600px]"
-            >
-              {/* Card container */}
-              <div className="absolute inset-0">
-                {/* Image that will scroll on hover */}
-                <img
-                  src={item.image.src}
-                  alt={item.name}
-                  className="w-full h-auto min-h-full object-cover transition-transform duration-3000 ease-in-out group-hover:translate-y-[calc(600px-100%)]"
-                  style={{ transform: "translateY(0)" }}
-                />
-              </div>
-              {/* Overlay with title */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                <h3 className="text-white text-xl font-semibold">
-                  {item.name}
-                </h3>
-              </div>
-            </div>
-                </a>
-           
-          ))}
-        </div>
-      </div>
-      <div className="webHidden w-full px-4">
-        <div className="flex flex-row items-center justify-between gap-4 ">
-          <h1 className="textHeading italic text-white font-bold whitespace-nowrap">
-            Job board
-          </h1>
-
-          <hr className="flex-grow border-t border-gray-600 mx-4" />
-
-          <Link href="/projects">
-            <button className="bg-white rounded-full text-[8px] text-black fontPoppins px-4 py-2 font-semibold whitespace-nowrap">
-              View All
-            </button>
-          </Link>
-        </div>
-        <div className="grid grid-cols-1 gap-6 mt-10">
-          {furnitureItems.map((item) => (
-            <div
-              key={item.id}
-              className="relative group overflow-hidden rounded-lg shadow-lg h-[600px]"
-            >
-              {/* Card container */}
-              <div className="absolute inset-0">
-                {/* Image that will scroll on hover */}
-                <img
-                  src={item.image.src}
-                  alt={item.name}
-                  className="w-full h-auto min-h-full object-cover transition-transform duration-3000 ease-in-out group-hover:translate-y-[calc(600px-100%)]"
-                  style={{ transform: "translateY(0)" }}
-                />
-              </div>
-              {/* Overlay with title */}
-               <a
-                href={furnitureItems[0].link}
-                target="_blank"
-                rel="noopener noreferrer"
-               
-                className="relative group overflow-hidden rounded-lg shadow-lg h-[600px] block">
-                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                <h3 className="text-white text-xl font-semibold">
-                  {item.name}
-                </h3>
-              </div>
-                </a>
-
-              
-            </div>
+        <div className="flex flex-col gap-10 mt-10">
+          {projects.map((p, i) => (
+            <ProjectShowcaseCard key={p.id} index={i + 1} {...p} />
           ))}
         </div>
       </div>

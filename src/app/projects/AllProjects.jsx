@@ -16,7 +16,8 @@ import xutech from "../../assets/xutech.png";
 import jubair from "../../assets/jubair-portfolio.png";
 import taxage from "../../assets/taxage.png";
 import fabrica from "../../assets/fabrica.png";
-import hrm from "../../assets/hrm.png"; 
+import hrm from "../../assets/hrm.png";
+import rin from "../../assets/rin.png";
 
 import "../../styles/homePage.css";
 
@@ -39,6 +40,15 @@ export default function ProjectsPage() {
           { role: "Admin", user: "ademize360@gmail.com", pass: "ademize360" },
           { role: "Employee", user: "nafis.ais.bup@gmail.com", pass: "nafis.ais.bup" },
         ],
+      },
+      {
+        title: "RIN JAPANESE RESTAURANT",
+        image: rin,
+        desc: "A restaurant management and ordering system for RIN Japanese in Hobart with online pickup and delivery orders, table reservations, and an admin dashboard with POS, floor plans and analytics. Payments are processed through Square, and paid orders are sent to the Square POS to print kitchen tickets.",
+        frontend: "Next.js, React, Tailwind CSS, TanStack Query, Zustand",
+        backend: "Node.js, Express, MongoDB, Redis, Socket.io, Square API",
+        duration: "3 months",
+        link: "https://www.rinjapanese.com.au/",
       },
     ],
     ecommerce: [
